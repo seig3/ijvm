@@ -1,0 +1,1 @@
+zcc +msx -vn -llib3d  -lm -lmath32 -create-app -DAMALLOC -subtype=msxdos2 ijvm-all.c -o ijvm.com
