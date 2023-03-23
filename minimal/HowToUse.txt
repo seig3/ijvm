@@ -2,6 +2,8 @@ https://webmsx.org/
 
 Boot with MSX-DOS2
 
+.bcd file was converted for DOS, CR/LF.
+
 ijvm test-min.bcd 2 3
 ijvm test-min.bcd -2 -2
 ...
