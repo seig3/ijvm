@@ -905,7 +905,7 @@ ijvm_new (IJVMImage *image, int argc, char *argv[])
   
   i->stack = (int32 *) i->method;
   
-  i->sp = i->cpp + image->cpool_size - i->stack - 1;
+  i->sp = (uint16)i->cpp + image->cpool_size - (uint16)i->stack - 1;
   i->initial_sp = i->sp;
   i->lv = 0;
   i->pc = IJVM_INITIAL_PC;
