@@ -273,8 +273,9 @@ ijvm_spec_init (int *argc, char *argv[])
   IJVMSpec *spec;
   char *spec_file;
   int i;
-
+  /*
   spec_file = NULL;
+
   for (i = 1; i < *argc; i++) {
     if (strcmp (argv[i], "-f") == 0) {
       if (i + 1 < *argc) {
@@ -300,7 +301,9 @@ ijvm_spec_init (int *argc, char *argv[])
     //    else
       spec_file = "IJVMSPEC";
   }
-
+  */
+  spec_file = "IJVMSPEC";
+  
   f = fopen (spec_file, "r");
   if (f == NULL) {
     fprintf (stderr, "Couldn't read specification file `%s'.\n", spec_file);
@@ -956,7 +959,7 @@ main (int argc, char *argv[])
     fprintf (stderr, "Usage: ijvm [OPTION] FILENAME [PARAMETERS ...]\n\n");
     fprintf (stderr, "Where OPTION is\n\n");
     fprintf (stderr, "  -s            Silent mode.  No snapshot is produced.\n");
-    fprintf (stderr, "  -f SPEC-FILE  The IJVM specification file to use.\n\n");
+    //    fprintf (stderr, "  -f SPEC-FILE  The IJVM specification file to use.\n\n");
     fprintf (stderr, "If you pass `-' as the filename the simulator will read the bytecode\nfile from stdin.\n\n");
     fprintf (stderr, "You must specify as many arguments as your main method requires, except\n");
     fprintf (stderr, "one; the simulator will pass the initial object reference for you.\n");
