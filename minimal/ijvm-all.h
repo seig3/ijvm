@@ -6,8 +6,8 @@
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 
 //#define IJVM_MEMORY_SIZE (640 << 10) //0xA_0000
-//#define IJVM_MEMORY_SIZE (640 <<6) //0xA000
-#define IJVM_MEMORY_SIZE 128
+//#define IJVM_MEMORY_SIZE 128
+#define IJVM_MEMORY_SIZE 256
 #define IJVM_INITIAL_OBJ_REF 42
 #define IJVM_INITIAL_PC 1
 
