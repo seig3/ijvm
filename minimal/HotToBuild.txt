@@ -1,1 +1,5 @@
+Use z88dk version 2.2, released in July 2022.
+
 zcc +msx -vn -llib3d  -lm -lmath32 -create-app -DAMALLOC -subtype=msxdos2 ijvm-all.c -o ijvm.com
+or
+zcc +msx -vn -llib3d  -lm -lmath32 -create-app -DAMALLOC -subtype=msxdos ijvm-all.c -o ijvmd1.com
