@@ -1,4 +1,4 @@
-# ijvm
+# IJVM
 IJVM for MSX, with Z88DK
 
 Base on https://users-cs.au.dk/bouvin/dComArk/2015/noter/Note_2/index.html
