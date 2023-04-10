@@ -7,3 +7,4 @@ Boot with MSX-DOS2
 ijvm test-min.bcd 2 3
 ijvm test-min.bcd -2 -2
 ...
+for MSX-DOS(1), please use "ijvmd1.com".
