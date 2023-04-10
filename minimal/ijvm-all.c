@@ -960,7 +960,7 @@ main (int argc, char *argv[])
     fprintf (stderr, "Where OPTION is\n\n");
     fprintf (stderr, "  -s            Silent mode.  No snapshot is produced.\n");
     //    fprintf (stderr, "  -f SPEC-FILE  The IJVM specification file to use.\n\n");
-    fprintf (stderr, "If you pass `-' as the filename the simulator will read the bytecode\nfile from stdin.\n\n");
+    //    fprintf (stderr, "If you pass `-' as the filename the simulator will read the bytecode\nfile from stdin.\n\n");
     fprintf (stderr, "You must specify as many arguments as your main method requires, except\n");
     fprintf (stderr, "one; the simulator will pass the initial object reference for you.\n");
     exit (-1);
@@ -973,10 +973,10 @@ main (int argc, char *argv[])
     argc = argc - 1;
   }
 
-  if (strcmp (argv[1], "-") == 0)
-    file = stdin;
-  else
-    file = fopen (argv[1], "r");
+  //  if (strcmp (argv[1], "-") == 0)
+  //    file = stdin;
+  //  else
+  file = fopen (argv[1], "r");
   if (file == NULL) {
     printf ("Could not open bytecode file `%s'\n", argv[1]);
     exit (-1);
